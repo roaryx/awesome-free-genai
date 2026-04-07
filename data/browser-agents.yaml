@@ -1,0 +1,19 @@
+# Browser Agents
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Browser Agents
+icon: "🌐"
+description: Agents that autonomously navigate and interact with web browsers.
+
+agents:
+  - name: BrowserUse
+    url: https://github.com/browser-use/browser-use
+    description: Open-source Python framework for building AI agents that control web browsers.
+    location: Open Source
+    free_tier: Open-source; free to use with your own LLM API keys.
+
+  - name: Browserbase
+    url: https://www.browserbase.com
+    description: Cloud infrastructure for deploying and running headless browser agents at scale.
+    location: USA
+    free_tier: Free plan with 1 browser hour, 1,000 Fetch API calls, and 1 concurrent browser.

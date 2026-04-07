@@ -1,0 +1,80 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "site/**"
+      - "scripts/**"
+      - "templates/**"
+  workflow_dispatch:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # ── Job 1: Build & commit README ──────────────────────────────────────────
+  # Always runs. Regenerates README.md from data/templates and commits it back
+  # to main. This job must succeed for the pipeline to be considered healthy.
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      pages-artifact: ${{ steps.upload.outputs.artifact_id }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Full clone so git push can fast-forward correctly
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run build script
+        run: python scripts/build.py
+
+      - name: Commit updated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README.md is already up-to-date, no commit needed."
+          else
+            git commit -m "docs: auto-update README.md from data sources"
+            git push origin HEAD:main
+            echo "README.md committed and pushed."
+          fi
+
+      - name: Upload Pages artifact
+        id: upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  # ── Job 2: Deploy to GitHub Pages ─────────────────────────────────────────
+  # Requires GitHub Pages to be enabled in repo Settings → Pages → Source:
+  # "GitHub Actions". If Pages is not configured this job will fail but the
+  # build job (README commit) will still have succeeded.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

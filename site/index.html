@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Free GenAI</title>
+  <meta name="description" content="A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Awesome Free GenAI</h1>
+      <p class="tagline">A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.</p>
+      <div class="header-actions">
+        <a href="https://github.com/roaryx/awesome-free-genai" class="btn btn-github" target="_blank" rel="noopener">
+          GitHub Repo
+        </a>
+        <button id="theme-toggle" class="btn btn-theme" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search tools by name or description..."
+        aria-label="Search tools"
+      >
+      <div class="filters">
+        <div class="filter-group">
+          <label for="category-filter">Category</label>
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+      </div>
+      <div id="results-count" class="results-count"></div>
+    </div>
+
+    <div id="categories-container"></div>
+  </main>
+
+  <footer>
+    <p>
+      Built with data from <a href="https://github.com/roaryx/awesome-free-genai/tree/main/data" target="_blank" rel="noopener">YAML data files</a>.
+      <a href="https://github.com/roaryx/awesome-free-genai/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a tool &rarr;</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

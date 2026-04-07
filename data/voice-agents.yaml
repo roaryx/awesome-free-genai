@@ -1,0 +1,44 @@
+# Voice Agents
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Voice Agents
+icon: "🎙️"
+description: AI agents that interact through real-time, natural voice conversations.
+
+agents:
+  - name: Sesame
+    url: https://app.sesame.com/welcome
+    description: Voice companion with natural conversational speech that adapts tone and emotion in real time.
+    location: USA
+    free_tier: Free research preview available.
+
+  - name: ChatGPT Voice
+    url: https://chat.openai.com
+    description: OpenAI's real-time voice mode for natural spoken conversations with ChatGPT.
+    location: USA
+    free_tier: Voice mode available on the free ChatGPT plan.
+
+  - name: Gemini Live
+    url: https://gemini.google.com
+    description: Google's real-time voice conversation mode with back-and-forth spoken dialogue.
+    location: USA
+    free_tier: Available on the free Gemini plan.
+
+  - name: Hume AI
+    url: https://www.hume.ai
+    description: Empathic voice AI that detects and responds to emotional cues in speech.
+    location: USA
+    free_tier: Free tier with limited API calls per month.
+
+  - name: Vapi
+    url: https://vapi.ai
+    description: Platform for building, testing, and deploying voice AI agents with phone and web support.
+    location: USA
+    free_tier: Free plan with limited call minutes.
+
+  - name: Smallest AI
+    url: https://smallest.ai
+    description: Voice agentic platform with ultra-low latency TTS, STT, and speech-to-speech models for building production-grade voice agents at scale.
+    location: USA
+    free_tier: Free to sign up with playground access; API usage is pay-as-you-go with no minimum spend.
+    

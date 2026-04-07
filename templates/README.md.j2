@@ -1,0 +1,55 @@
+{#- This template is used by scripts/build.py to auto-generate README.md.
+    To update the README, edit this template or the YAML data files in data/.
+    Do NOT edit README.md directly — it will be overwritten on the next build. -#}
+{#- Map location names to GitHub emoji shortcodes -#}
+{%- set flag_map = {
+  'USA': ':us:',
+  'France': ':fr:',
+  'China': ':cn:',
+  'Australia': ':australia:',
+  'Singapore': ':singapore:',
+  'Sweden': ':sweden:',
+  'Open Source': ':globe_with_meridians:',
+} -%}
+# Awesome Free GenAI
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+![Tools](https://img.shields.io/badge/Tools-{{ total_tools }}-blueviolet)
+[![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
+
+> A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
+
+**[Browse the interactive list &rarr;](https://roaryx.github.io/awesome-free-genai/)**
+
+---
+
+## Contents
+
+{% for cat in categories -%}
+- [{{ cat.icon }} {{ cat.category }}](#{{ cat.category | lower | replace(' ', '-') }})
+{% endfor -%}
+- [Contributing](#contributing)
+
+---
+
+{% for cat in categories -%}
+## {{ cat.icon }} {{ cat.category }}
+
+*{{ cat.description }}*
+
+{% for agent in cat.agents -%}
+**[{{ agent.name }}]({{ agent.url }})** {{ flag_map.get(agent.location, ':globe_with_meridians:') }}
+- 📝 {{ agent.description }}
+- 🆓 {{ agent.free_tier }}
+
+{% endfor %}
+{% endfor -%}
+---
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to add a tool.
+
+---
+
+*This README is auto-generated from the YAML data files in [`data/`](data/) and the template in [`templates/README.md.j2`](templates/README.md.j2). Do not edit it manually.*

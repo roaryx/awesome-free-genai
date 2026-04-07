@@ -1,0 +1,25 @@
+# Task Agents
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Task Agents
+icon: "✅"
+description: AI agents that autonomously execute tasks.
+
+agents:
+  - name: Copilot Tasks
+    url: https://copilot.microsoft.com/tasks/preview
+    description: Microsoft Copilot's agentic task runner that works in the background with its own browser to complete scheduled, recurring, and one-time tasks across apps and services.
+    location: USA
+    free_tier: Free research preview for personal Microsoft Copilot users; no Microsoft 365 subscription required.
+
+  - name: Tasklet
+    url: https://tasklet.ai
+    description: AI agent platform that automates business workflows by connecting to services like Gmail, Linear, GitHub, and Notion to run research, monitoring, and multi-step tasks.
+    location: USA
+    free_tier: Free plan with 300 daily credits, up to 10 trigger executions, and multiple service connections.
+
+  - name: Toolhouse
+    url: https://app.toolhouse.ai
+    description: No-code platform for building and deploying AI agents with built-in integrations, prompt engineering, file uploads, and sandboxed testing.
+    location: USA
+    free_tier: Free Basic plan with 15 credits per month.

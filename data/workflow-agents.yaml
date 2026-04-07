@@ -1,0 +1,19 @@
+# Workflow Agents
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Workflow Agents
+icon: "⚙️"
+description: Agents that automate business processes and orchestrate multi-step workflows.
+
+agents:
+  - name: Relevance AI
+    url: https://relevanceai.com
+    description: Platform for building and deploying AI agent workforces that handle business tasks.
+    location: Australia
+    free_tier: Free plan with 200 actions per month and unlimited agents.
+
+  - name: Make
+    url: https://www.make.com/
+    description: Low-code platform for building custom workflows.
+    location: Prague
+    free_tier: Free plan with 1,000 credits per month

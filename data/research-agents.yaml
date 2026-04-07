@@ -1,0 +1,43 @@
+# Research Agents
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Research Agents
+icon: "🔍"
+description: Agents that autonomously research, analyze, and synthesize information.
+
+agents:
+  - name: Gemini Deep Research
+    url: https://gemini.google.com
+    description: Google's agent for multi-step web research that generates detailed reports with citations.
+    location: USA
+    free_tier: Available in the free Gemini plan with usage limits.
+
+  - name: Perplexity
+    url: https://www.perplexity.ai
+    description: AI research agent that searches the web in real time and synthesizes cited answers.
+    location: USA
+    free_tier: Free tier with standard searches.
+
+  - name: Elicit
+    url: https://elicit.com
+    description: AI research assistant that finds, reads, and analyzes scientific papers at scale.
+    location: USA
+    free_tier: Free Basic plan with unlimited search, unlimited summaries, and 2 automated reports per month.
+
+  - name: Genspark
+    url: https://www.genspark.ai
+    description: All-in-one AI workspace with chat, slides, sheets, docs, design, image, music, and video generation.
+    location: USA
+    free_tier: Free plan with limited usage.
+
+  - name: STORM
+    url: https://storm.genie.stanford.edu/
+    description: Stanford's open-source agent that generates Wikipedia-like articles through multi-perspective research.
+    location: USA
+    free_tier: Free web demo available.
+
+  - name: Agnes
+    url: https://app.agnes-ai.com/
+    description: A versatile AI tool that automates research, generates reports, creates presentations
+    location: Singapore
+    free_tier: Free plan with limited usage.

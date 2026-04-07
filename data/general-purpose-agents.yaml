@@ -1,0 +1,92 @@
+# General-Purpose Agents
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: General-Purpose Agents
+icon: "🤖"
+description: Versatile AI agents that reason, plan, and execute multi-step tasks across domains.
+
+agents:
+  - name: ChatGPT
+    url: https://chat.openai.com
+    description: OpenAI's conversational AI assistant powered by GPT models with web browsing, code execution, and image generation.
+    location: USA
+    free_tier: Free plan with limited usage.
+
+  - name: Claude
+    url: https://claude.ai
+    description: Anthropic's AI assistant focused on safety, helpfulness, and extended context windows.
+    location: USA
+    free_tier: Free plan with limited usage.
+
+  - name: Gemini
+    url: https://gemini.google.com
+    description: Google's multimodal conversational AI with deep Google ecosystem integration.
+    location: USA
+    free_tier: Free plan with limited usage.
+
+  - name: Mistral Le Chat
+    url: https://chat.mistral.ai
+    description: Mistral AI's conversational assistant with multimodal capabilities built on open-weight language models.
+    location: France
+    free_tier: Free plan with access to multiple Mistral models including Mistral Large, web search, and document uploads.
+
+  - name: Microsoft Copilot
+    url: https://copilot.microsoft.com
+    description: Microsoft's AI companion with web search and integration across Microsoft 365.
+    location: USA
+    free_tier: Free plan with limited usage.
+
+  - name: HuggingChat
+    url: https://huggingface.co/chat
+    description: Hugging Face's open-source chat interface supporting multiple community language models.
+    location: USA
+    free_tier: Free to use with multiple open-source models.
+
+  - name: Qwen Chat
+    url: https://chat.qwen.ai
+    description: Alibaba Cloud's free multimodal AI assistant with reasoning, coding, image generation, and web search.
+    location: China
+    free_tier: Free plan with limited usage.
+
+  - name: MiniMax Agent
+    url: https://agent.minimax.io
+    description: AI agent platform powered by MiniMax M2 with coding, deep search, and multi-step tool-use capabilities.
+    location: China
+    free_tier: Free plan with limited usage.
+
+  - name: Zhipu AI (Z.ai)
+    url: https://chat.z.ai/
+    description: AI assistant powered by GLM-5 with coding, website/slide creation, data analysis, deep research, and multimodal capabilities.
+    location: China
+    free_tier: Free plan with no login required for basic usage.
+
+  - name: Kimi
+    url: https://www.kimi.com/
+    description: Moonshot AI's assistant with long-context understanding, deep research, agentic tool-use, and multi-agent swarm capabilities.
+    location: China
+    free_tier: Free plan with limited usage.
+
+  - name: DeepSeek
+    url: https://chat.deepseek.com
+    description: Open-source AI assistant with strong reasoning, math, and coding abilities.
+    location: China
+    free_tier: Free chat interface with no subscription required; open-source models available.
+
+  - name: Xiaomi MiMo
+    url: https://aistudio.xiaomimimo.com/
+    description: Xiaomi's AI studio for reasoning, coding, and agentic workflows.
+    location: China
+    free_tier: Free plan with limited usage.
+
+  - name: StepFun
+    url: https://stepfun.ai/chats/
+    description: Shanghai-based AI assistant with multimodal understanding, deep research, and video/audio generation.
+    location: China
+    free_tier: Free plan with limited usage.
+
+  - name: Zenmux
+    url: https://zenmux.ai/platform/chat
+    description: Unified LLM gateway providing access to multiple leading AI models through a single chat interface with intelligent routing and quality guarantees.
+    location: Singapore
+    free_tier: Free plan with limited usage.
+  

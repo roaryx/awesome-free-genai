@@ -1,0 +1,106 @@
+category: Multimedia Generation
+icon: "🎬"
+description: Tools and models for generating music, speech, sound effects, and video content.
+
+agents:
+  - name: ElevenLabs
+    url: https://elevenlabs.io
+    description: Realistic AI voice generation and text-to-speech platform.
+    location: USA
+    free_tier: Free plan with 10,000 credits per month (~10 minutes of speech).
+
+  - name: Suno
+    url: https://suno.com
+    description: AI music generation platform that creates full songs from text prompts.
+    location: USA
+    free_tier: Free plan with 50 credits per day (approximately 10 songs).
+
+  - name: Udio
+    url: https://www.udio.com
+    description: AI-powered music creation tool with high-fidelity audio output and stem downloads.
+    location: USA
+    free_tier: Free plan with 10 daily credits and 100 monthly credits.
+
+  - name: Murf AI
+    url: https://murf.ai
+    description: AI voice generator for voiceovers, presentations, and videos with 200+ voices across 20+ languages.
+    location: USA
+    free_tier: Free plan with limited voice generation minutes.
+
+  - name: Runway
+    url: https://runwayml.com
+    description: Advanced AI video and image generation platform for creators, featuring Gen-4 and Gen-4.5 models.
+    location: USA
+    free_tier: Free plan with 125 one-time credits.
+
+  - name: Pika
+    url: https://pika.art
+    description: AI-powered video generation and editing tool with intuitive interface.
+    location: USA
+    free_tier: Free plan with 80 credits per month.
+
+  - name: HeyGen
+    url: https://www.heygen.com
+    description: AI video platform for creating professional avatar-based videos.
+    location: USA
+    free_tier: Free plan with 3 videos per month at 720p.
+    
+  - name: Kling AI
+    url: https://klingai.com
+    description: Kuaishou's cinematic AI video generator supporting text-to-video and image-to-video with physics-accurate motion and native audio sync.
+    location: China
+    free_tier: Free plan with 66 credits per day.
+
+  - name: Hailuo AI
+    url: https://hailuoai.video/
+    description: MiniMax's cinematic AI video generator with physics-accurate motion, multi-style output, and director-style camera controls.
+    location: China
+    free_tier: Free plan with daily credits.
+
+  - name: Vidu
+    url: https://www.vidu.com/
+    description: All-in-one AI image and video platform with text-to-video, image-to-video, and reference-to-video for consistent characters, objects, and scenes.
+    location: China
+    free_tier: Free credits on signup.
+
+  - name: Wan AI
+    url: https://create.wan.video/
+    description: Alibaba's Wan AI creative platform for text-to-image, text-to-video, image-to-video, image editing, and related tools.
+    location: China
+    free_tier: Free tier with credits for generation.
+
+  - name: Dreamina AI
+    url: https://dreamina.capcut.com/
+    description: ByteDance's AI creative suite for image generation, text-to-video (Seedance), avatar lip-sync, and canvas editing, integrated with CapCut.
+    location: China
+    free_tier: Free plan with daily tokens for generation.
+
+  - name: Pippit AI
+    url: https://www.pippit.ai/
+    description: CapCut-powered marketing content platform for one-click video and image generation, AI avatars, and auto-publishing for e-commerce and social media.
+    location: China
+    free_tier: Free plan with limited weekly credits.
+
+  - name: PixVerse
+    url: https://app.pixverse.ai/
+    description: AI video generator for text-to-video and image-to-video with viral templates and trending effects.
+    location: China
+    free_tier: Free plan with daily credits.
+
+  - name: Capcut Video Studio
+    url: https://www.capcut.com/ai-creator
+    description: ByteDance's all-in-one AI video editor with script-to-video, AI avatars, auto-captions, background removal, and 100+ voiceover languages.
+    location: China
+    free_tier: Free plan with limited usage.
+
+  - name: Lovart AI
+    url: https://www.lovart.ai/
+    description: AI design agent for image and video generation, branding, and storyboarding, combining multiple top video models (Sora, Veo 3, Kling, Hailuo) in one workspace.
+    location: Singapore
+    free_tier: Free plan with 30 credits per day.
+
+  - name: Phota Studio
+    url: https://studio.photalabs.com/
+    description: Identity-preserving AI photo studio that trains a personalized model from your photos to generate studio-quality portraits and realistic scene edits.
+    location: USA
+    free_tier: Free plan with 40 credits per month.

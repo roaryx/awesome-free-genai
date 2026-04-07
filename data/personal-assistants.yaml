@@ -1,0 +1,61 @@
+# Personal Assistants
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Personal Assistants
+icon: "🧑‍💼"
+description: Cloud-hosted AI agents that act as always-on personal assistants across messaging platforms.
+
+agents:
+  - name: KiloClaw
+    url: https://kilo.ai/kiloclaw
+    description: Hosted OpenClaw by Kilo with one-click deploy, 500+ AI models, and scheduled task automation.
+    location: USA
+    free_tier: 7-day free trial, no credit card required.
+    
+  - name: Manus
+    url: https://manus.im
+    description: AI agent that autonomously plans and executes complex real-world tasks across web, code, and design.
+    location: Singapore
+    free_tier: Free plan with 300 daily refresh credits and access to Chat mode.
+
+  - name: Base44 Superagents
+    url: https://base44.com/superagents
+    description: AI agent that connect to your tools.
+    location: Israel
+    free_tier: Free plan with limited usage.
+
+  - name: Zo Computer
+    url: https://www.zo.computer
+    description: A personal AI that works 24/7.
+    location: USA
+    free_tier: Free plan with limited usage and includes 100GB of cloud storage.
+
+  - name: Happycapy
+    url: https://happycapy.ai/
+    description: A personal AI that works 24/7.
+    location: Hong Kong
+    free_tier: Free plan with limited usage.
+
+  - name: Poke
+    url: https://poke.com
+    description: SMS-based personal AI agent that connects to your tools — Todoist, Notion, Linear, GitHub, Oura, and more — via text message recipes.
+    location: USA
+    free_tier: Free to get started with phone number sign-up and access to community recipes.
+
+  - name: Pika
+    url: https://www.pika.me
+    description: Create a persistent AI version of yourself that talks, posts, remembers, and acts on your behalf across platforms with your voice, personality, and appearance.
+    location: USA
+    free_tier: Free to start via web or iOS app.
+
+  - name: Dimension
+    url: https://dimension.dev
+    description: AI coworker that delivers morning briefings, drafts inbox replies in your tone, preps meetings, and executes deep-work tasks across 30+ app integrations.
+    location: USA
+    free_tier: Free plan with 100,000 one-time credits, morning and evening briefings, inbox management, meeting prep, and access to AI agents.
+
+  - name: Lindy
+    url: https://chat.lindy.ai
+    description: AI personal assistant reachable via iMessage or SMS that manages your inbox, drafts replies in your voice, schedules meetings, and takes meeting notes across hundreds of integrations.
+    location: USA
+    free_tier: Free plan with 400 credits per month

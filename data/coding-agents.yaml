@@ -1,0 +1,32 @@
+# Coding Agents
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Coding Agents
+icon: "💻"
+description: Autonomous agents that write, debug, and ship code.
+
+agents:
+  - name: GitHub Copilot
+    url: https://github.com/features/copilot
+    description: AI coding agent that can autonomously implement features and fix bugs across GitHub repos.
+    location: USA
+    free_tier: Copilot Free with 2,000 code completions and 50 chat messages per month.
+
+  - name: Cursor
+    url: https://cursor.sh
+    description: AI-first code editor with agentic capabilities for multi-file editing and refactoring.
+    location: USA
+    free_tier: Free Hobby plan with limited Agent requests and limited Tab completions.
+
+  - name: Warp
+    url: https://www.warp.dev
+    description: Agentic development environment with an autonomous coding agent (Oz) that operates in the terminal.
+    location: USA
+    free_tier: Limited AI credits and cloud agents access.
+
+  - name: Google Antigravity
+    url: https://antigravity.google
+    description: AI IDE by Google with cross-surface agents, tab autocompletion, and natural language code commands for the agent-first era.
+    location: USA
+    free_tier: Free Individual plan with unlimited tab completions and unlimited command requests.
+
