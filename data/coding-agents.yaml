@@ -18,6 +18,12 @@ agents:
     location: USA
     free_tier: Free Hobby plan with limited Agent requests and limited Tab completions.
 
+  - name: Amp Code
+    url: https://ampcode.com
+    description: Frontier coding agent for the terminal that uses leading models to write, debug, and refactor code.
+    location: USA
+    free_tier: Free mode available with rate limits.
+
   - name: Warp
     url: https://www.warp.dev
     description: Agentic development environment with an autonomous coding agent (Oz) that operates in the terminal.
