@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-83-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-84-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -235,6 +235,10 @@
 **[Agentica](https://agentica.symbolica.ai/)** :us:
 - 📝 AI agent that builds AI applications.
 - 🆓 Free tier limited usage.
+
+**[ClackyAI](https://app.clacky.ai/)** :singapore:
+- 📝 AI full-stack app builder with a cloud development environment for generating, editing, and deploying production-ready applications.
+- 🆓 Free tier with limited monthly credits.
 
 
 ## 🎬 Multimedia Generation
