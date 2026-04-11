@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-79-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-80-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -280,6 +280,10 @@
 **[Mitte](https://mitte.ai/)** :us:
 - 📝 AI creative suite for generating and editing images, video, and audio with presets for voice cloning, avatars, and production assets.
 - 🆓 Free plan with 175 daily credits.
+
+**[Leonardo AI](https://app.leonardo.ai/)** :australia:
+- 📝 Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
+- 🆓 Free plan with 150 daily Fast Tokens for quick creations.
 
 **[Zopia](https://zopia.ai/)** :cn:
 - 📝 AI film agent that generates, reviews, and auto-edits cinematic videos from text, scripts, and references in one workflow.
