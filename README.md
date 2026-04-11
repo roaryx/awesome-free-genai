@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-90-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-91-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -320,6 +320,10 @@
 **[LTX Studio](https://ltx.studio/)** :globe_with_meridians:
 - 📝 AI video production platform for creating storyboards, images, and videos with script-to-video, editing, and creative control tools.
 - 🆓 Free plan with 800 one-time credits for personal use.
+
+**[InVideo](https://invideo.io/)** :globe_with_meridians:
+- 📝 AI video creation platform for generating ads, stories, explainers, avatars, and edited videos from prompts and media inputs.
+- 🆓 Free plan with limited credits and exports with the InVideo logo.
 
 **[Leonardo AI](https://app.leonardo.ai/)** :australia:
 - 📝 Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
