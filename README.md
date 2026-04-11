@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-72-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-74-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -329,6 +329,14 @@
 **[Happycapy](https://happycapy.ai/)** :globe_with_meridians:
 - 📝 A personal AI that works 24/7.
 - 🆓 Free plan with limited usage.
+
+**[Eve](https://eve.new/)** :us:
+- 📝 Cloud personal AI coworker with built-in skills for research, writing, coding, scheduling, and other cross-app tasks.
+- 🆓 Free to sign up with Google or email, with a 10,000-credit welcome bonus.
+
+**[AnyGen](https://www.anygen.io/)** :cn:
+- 📝 AI teammate for documents, slides, data analysis, research, and other collaborative knowledge-work tasks.
+- 🆓 Free plan with 200 daily credits.
 
 **[Poke](https://poke.com)** :us:
 - 📝 SMS-based personal AI agent that connects to your tools — Todoist, Notion, Linear, GitHub, Oura, and more — via text message recipes.
