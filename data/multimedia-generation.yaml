@@ -99,6 +99,12 @@ agents:
     location: Israel
     free_tier: Free plan with 800 one-time credits for personal use.
 
+  - name: InVideo
+    url: https://invideo.io/
+    description: AI video creation platform for generating ads, stories, explainers, avatars, and edited videos from prompts and media inputs.
+    location: India
+    free_tier: Free plan with limited credits and exports with the InVideo logo.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
