@@ -62,3 +62,9 @@ agents:
     description: AI app builder that generates and edits full-stack web, mobile, bot, agent, and extension projects across many languages and frameworks.
     location: USA
     free_tier: Free tier with 100K credits per month.
+
+  - name: Emergent
+    url: https://app.emergent.sh/
+    description: AI app builder for creating production-ready full-stack web and mobile applications through natural language conversations.
+    location: USA
+    free_tier: Free plan with 10 monthly credits.
