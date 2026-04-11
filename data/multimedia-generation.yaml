@@ -93,6 +93,12 @@ agents:
     location: USA
     free_tier: 200 free credits upon signing up.
 
+  - name: LTX Studio
+    url: https://ltx.studio/
+    description: AI video production platform for creating storyboards, images, and videos with script-to-video, editing, and creative control tools.
+    location: Israel
+    free_tier: Free plan with 800 one-time credits for personal use.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
