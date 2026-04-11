@@ -57,6 +57,12 @@ agents:
     location: China
     free_tier: Free plan with daily credits.
 
+  - name: Mitte
+    url: https://mitte.ai/
+    description: AI creative suite for generating and editing images, video, and audio with presets for voice cloning, avatars, and production assets.
+    location: USA
+    free_tier: Free plan with 175 daily credits.
+
   - name: Vidu
     url: https://www.vidu.com/
     description: All-in-one AI image and video platform with text-to-video, image-to-video, and reference-to-video for consistent characters, objects, and scenes.
