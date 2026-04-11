@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-75-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-76-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -341,6 +341,10 @@
 **[AnyGen](https://www.anygen.io/)** :cn:
 - 📝 AI teammate for documents, slides, data analysis, research, and other collaborative knowledge-work tasks.
 - 🆓 Free plan with 200 daily credits.
+
+**[Pokee AI](https://pokee.ai/)** :us:
+- 📝 AI agent for professionals that automates research, coding, documents, slides, social workflows, and other cross-tool tasks with persistent cloud execution.
+- 🆓 Free plan with 500 credits per month.
 
 **[Poke](https://poke.com)** :us:
 - 📝 SMS-based personal AI agent that connects to your tools — Todoist, Notion, Linear, GitHub, Oura, and more — via text message recipes.
