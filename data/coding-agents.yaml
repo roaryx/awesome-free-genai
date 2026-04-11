@@ -24,6 +24,12 @@ agents:
     location: USA
     free_tier: Free mode available with rate limits.
 
+  - name: OpenCode
+    url: https://opencode.ai/
+    description: Open source AI coding agent for the terminal, desktop, and IDE with support for many providers and local models.
+    location: USA
+    free_tier: Some free models are available on OpenCode for a limited time.
+
   - name: Warp
     url: https://www.warp.dev
     description: Agentic development environment with an autonomous coding agent (Oz) that operates in the terminal.
