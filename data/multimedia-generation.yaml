@@ -63,6 +63,12 @@ agents:
     location: USA
     free_tier: Free plan with 175 daily credits.
 
+  - name: OpenArt
+    url: https://openart.ai/
+    description: AI creative platform for generating and editing images, video, characters, and audio with story-focused creation tools.
+    location: USA
+    free_tier: Free plan with a one-time bonus of 20 free credits for new users.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
