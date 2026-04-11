@@ -63,6 +63,12 @@ agents:
     location: USA
     free_tier: Free plan with 175 daily credits.
 
+  - name: Leonardo AI
+    url: https://app.leonardo.ai/
+    description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
+    location: Australia
+    free_tier: Free plan with 150 daily Fast Tokens for quick creations.
+
   - name: Zopia
     url: https://zopia.ai/
     description: AI film agent that generates, reviews, and auto-edits cinematic videos from text, scripts, and references in one workflow.
