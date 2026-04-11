@@ -48,6 +48,12 @@ agents:
     location: China
     free_tier: Free plan with 200 daily credits.
 
+  - name: Pokee AI
+    url: https://pokee.ai/
+    description: AI agent for professionals that automates research, coding, documents, slides, social workflows, and other cross-tool tasks with persistent cloud execution.
+    location: USA
+    free_tier: Free plan with 500 credits per month.
+
   - name: Poke
     url: https://poke.com
     description: SMS-based personal AI agent that connects to your tools — Todoist, Notion, Linear, GitHub, Oura, and more — via text message recipes.
