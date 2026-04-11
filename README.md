@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-77-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-78-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -280,6 +280,10 @@
 **[Mitte](https://mitte.ai/)** :us:
 - 📝 AI creative suite for generating and editing images, video, and audio with presets for voice cloning, avatars, and production assets.
 - 🆓 Free plan with 175 daily credits.
+
+**[SkyReels](https://www.skyreels.ai/)** :cn:
+- 📝 AI video generation platform for creating cinematic videos from text, images, and multimodal references with synchronized audio.
+- 🆓 Free plan with 70 credits per month.
 
 **[Vidu](https://www.vidu.com/)** :cn:
 - 📝 All-in-one AI image and video platform with text-to-video, image-to-video, and reference-to-video for consistent characters, objects, and scenes.
