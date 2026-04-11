@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-81-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-82-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -284,6 +284,10 @@
 **[OpenArt](https://openart.ai/)** :us:
 - 📝 AI creative platform for generating and editing images, video, characters, and audio with story-focused creation tools.
 - 🆓 Free plan with a one-time bonus of 20 free credits for new users.
+
+**[ImagineArt](https://www.imagine.art/)** :globe_with_meridians:
+- 📝 AI creative suite for generating and editing images, video, and voice content with workflows, apps, and model selection tools.
+- 🆓 Free plan with 100 free credits per day.
 
 **[Leonardo AI](https://app.leonardo.ai/)** :australia:
 - 📝 Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
