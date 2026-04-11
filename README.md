@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-71-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-72-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -37,6 +37,10 @@
 **[Cursor](https://cursor.sh)** :us:
 - 📝 AI-first code editor with agentic capabilities for multi-file editing and refactoring.
 - 🆓 Free Hobby plan with limited Agent requests and limited Tab completions.
+
+**[Amp Code](https://ampcode.com)** :us:
+- 📝 Frontier coding agent for the terminal that uses leading models to write, debug, and refactor code.
+- 🆓 Free mode available with rate limits.
 
 **[Warp](https://www.warp.dev)** :us:
 - 📝 Agentic development environment with an autonomous coding agent (Oz) that operates in the terminal.
