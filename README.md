@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-84-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-85-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -239,6 +239,10 @@
 **[ClackyAI](https://app.clacky.ai/)** :singapore:
 - 📝 AI full-stack app builder with a cloud development environment for generating, editing, and deploying production-ready applications.
 - 🆓 Free tier with limited monthly credits.
+
+**[Orchids](https://www.orchids.app/)** :us:
+- 📝 AI app builder that generates and edits full-stack web, mobile, bot, agent, and extension projects across many languages and frameworks.
+- 🆓 Free tier with 100K credits per month.
 
 
 ## 🎬 Multimedia Generation
