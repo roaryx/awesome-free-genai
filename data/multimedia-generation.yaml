@@ -87,6 +87,12 @@ agents:
     location: USA
     free_tier: Free web playground for trying MAI-Image-2 image generation.
 
+  - name: TapNow
+    url: https://tapnow.ai/
+    description: AI visual creation platform for generating e-commerce ads, cinematic videos, and other creative visual content.
+    location: USA
+    free_tier: 200 free credits upon signing up.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
