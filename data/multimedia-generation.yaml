@@ -69,6 +69,12 @@ agents:
     location: USA
     free_tier: Free plan with a one-time bonus of 20 free credits for new users.
 
+  - name: ImagineArt
+    url: https://www.imagine.art/
+    description: AI creative suite for generating and editing images, video, and voice content with workflows, apps, and model selection tools.
+    location: Turkey
+    free_tier: Free plan with 100 free credits per day.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
