@@ -56,3 +56,9 @@ agents:
     description: AI full-stack app builder with a cloud development environment for generating, editing, and deploying production-ready applications.
     location: Singapore
     free_tier: Free tier with limited monthly credits.
+
+  - name: Orchids
+    url: https://www.orchids.app/
+    description: AI app builder that generates and edits full-stack web, mobile, bot, agent, and extension projects across many languages and frameworks.
+    location: USA
+    free_tier: Free tier with 100K credits per month.
