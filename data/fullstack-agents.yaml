@@ -50,3 +50,9 @@ agents:
     description: AI agent that builds AI applications.
     location: USA
     free_tier: Free tier limited usage.
+
+  - name: ClackyAI
+    url: https://app.clacky.ai/
+    description: AI full-stack app builder with a cloud development environment for generating, editing, and deploying production-ready applications.
+    location: Singapore
+    free_tier: Free tier with limited monthly credits.
