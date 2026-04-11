@@ -75,6 +75,12 @@ agents:
     location: Turkey
     free_tier: Free plan with 100 free credits per day.
 
+  - name: MAI Playground
+    url: https://playground.microsoft.ai/
+    description: Microsoft's AI playground for trying MAI-Image-2, MAI-Transcribe-1, and MAI-Voice-1 models for image, transcription, and voice generation.
+    location: USA
+    free_tier: Free web playground for trying MAI-Image-2 image generation.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
