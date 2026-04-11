@@ -89,4 +89,10 @@ agents:
     description: Unified LLM gateway providing access to multiple leading AI models through a single chat interface with intelligent routing and quality guarantees.
     location: Singapore
     free_tier: Free plan with limited usage.
+
+  - name: Arena AI
+    url: https://arena.ai/
+    description: Multi-model AI chat and leaderboard platform for comparing leading language models side by side.
+    location: USA
+    free_tier: Free to use with access to multiple AI models.
   
