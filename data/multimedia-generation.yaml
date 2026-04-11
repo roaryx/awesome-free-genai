@@ -44,6 +44,12 @@ agents:
     description: AI video platform for creating professional avatar-based videos.
     location: USA
     free_tier: Free plan with 3 videos per month at 720p.
+
+  - name: VEED
+    url: https://www.veed.io/
+    description: AI video creation and editing platform for generating, dubbing, subtitling, and polishing social, marketing, and business videos.
+    location: United Kingdom
+    free_tier: Free plan with watermark, 10-minute exports, 2 videos per day in Gen-AI Studio, and up to 20 AI videos per month with credits.
     
   - name: Kling AI
     url: https://klingai.com
