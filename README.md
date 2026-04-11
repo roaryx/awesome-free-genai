@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-85-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-86-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -276,6 +276,10 @@
 **[HeyGen](https://www.heygen.com)** :us:
 - 📝 AI video platform for creating professional avatar-based videos.
 - 🆓 Free plan with 3 videos per month at 720p.
+
+**[VEED](https://www.veed.io/)** :globe_with_meridians:
+- 📝 AI video creation and editing platform for generating, dubbing, subtitling, and polishing social, marketing, and business videos.
+- 🆓 Free plan with watermark, 10-minute exports, 2 videos per day in Gen-AI Studio, and up to 20 AI videos per month with credits.
 
 **[Kling AI](https://klingai.com)** :cn:
 - 📝 Kuaishou's cinematic AI video generator supporting text-to-video and image-to-video with physics-accurate motion and native audio sync.
