@@ -63,6 +63,12 @@ agents:
     location: USA
     free_tier: Free plan with 175 daily credits.
 
+  - name: Zopia
+    url: https://zopia.ai/
+    description: AI film agent that generates, reviews, and auto-edits cinematic videos from text, scripts, and references in one workflow.
+    location: China
+    free_tier: One-time free credit upon signing up.
+
   - name: SkyReels
     url: https://www.skyreels.ai/
     description: AI video generation platform for creating cinematic videos from text, images, and multimodal references with synchronized audio.
