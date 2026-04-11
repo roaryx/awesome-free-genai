@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-74-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-75-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -272,6 +272,10 @@
 **[Hailuo AI](https://hailuoai.video/)** :cn:
 - 📝 MiniMax's cinematic AI video generator with physics-accurate motion, multi-style output, and director-style camera controls.
 - 🆓 Free plan with daily credits.
+
+**[Mitte](https://mitte.ai/)** :us:
+- 📝 AI creative suite for generating and editing images, video, and audio with presets for voice cloning, avatars, and production assets.
+- 🆓 Free plan with 175 daily credits.
 
 **[Vidu](https://www.vidu.com/)** :cn:
 - 📝 All-in-one AI image and video platform with text-to-video, image-to-video, and reference-to-video for consistent characters, objects, and scenes.
