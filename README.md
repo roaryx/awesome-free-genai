@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-86-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-87-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -304,6 +304,10 @@
 **[MAI Playground](https://playground.microsoft.ai/)** :us:
 - 📝 Microsoft's AI playground for trying MAI-Image-2, MAI-Transcribe-1, and MAI-Voice-1 models for image, transcription, and voice generation.
 - 🆓 Free web playground for trying MAI-Image-2 image generation.
+
+**[TapNow](https://tapnow.ai/)** :us:
+- 📝 AI visual creation platform for generating e-commerce ads, cinematic videos, and other creative visual content.
+- 🆓 200 free credits upon signing up.
 
 **[Leonardo AI](https://app.leonardo.ai/)** :australia:
 - 📝 Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
