@@ -42,6 +42,12 @@ agents:
     location: USA
     free_tier: Free to sign up with Google or email, with a 10,000-credit welcome bonus.
 
+  - name: AnyGen
+    url: https://www.anygen.io/
+    description: AI teammate for documents, slides, data analysis, research, and other collaborative knowledge-work tasks.
+    location: China
+    free_tier: Free plan with 200 daily credits.
+
   - name: Poke
     url: https://poke.com
     description: SMS-based personal AI agent that connects to your tools — Todoist, Notion, Linear, GitHub, Oura, and more — via text message recipes.
