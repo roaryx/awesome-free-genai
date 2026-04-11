@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-87-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-88-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -156,6 +156,10 @@
 **[Zenmux](https://zenmux.ai/platform/chat)** :singapore:
 - 📝 Unified LLM gateway providing access to multiple leading AI models through a single chat interface with intelligent routing and quality guarantees.
 - 🆓 Free plan with limited usage.
+
+**[Arena AI](https://arena.ai/)** :us:
+- 📝 Multi-model AI chat and leaderboard platform for comparing leading language models side by side.
+- 🆓 Free to use with access to multiple AI models.
 
 
 ## 🎙️ Voice Agents
