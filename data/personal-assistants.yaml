@@ -77,3 +77,9 @@ agents:
     description: AI personal assistant reachable via iMessage or SMS that manages your inbox, drafts replies in your voice, schedules meetings, and takes meeting notes across hundreds of integrations.
     location: USA
     free_tier: Free plan with 400 credits per month
+
+  - name: Ampere
+    url: https://www.ampere.sh/
+    description: Hosted OpenClaw personal assistant platform with always-on cloud execution, memory, web search, browser automation, and app integrations.
+    location: USA
+    free_tier: Free plan with 5,000 credits per month and free hosting during beta.
