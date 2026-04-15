@@ -83,3 +83,9 @@ agents:
     description: Hosted OpenClaw personal assistant platform with always-on cloud execution, memory, web search, browser automation, and app integrations.
     location: USA
     free_tier: Free plan with 5,000 credits per month and free hosting during beta.
+
+  - name: StartClaw
+    url: https://startclaw.com/
+    description: Cloud OpenClaw platform for deploying AI employees and personal assistants with inbox, browser, CRM, calendar, and integration workflows.
+    location: USA
+    free_tier: Free plan with 300 credits per month, one AI employee, and no credit card required.
