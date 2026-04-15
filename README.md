@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-92-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-93-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -425,6 +425,10 @@
 **[Ampere](https://www.ampere.sh/)** :us:
 - 📝 Hosted OpenClaw personal assistant platform with always-on cloud execution, memory, web search, browser automation, and app integrations.
 - 🆓 Free plan with 5,000 credits per month and free hosting during beta.
+
+**[StartClaw](https://startclaw.com/)** :us:
+- 📝 Cloud OpenClaw platform for deploying AI employees and personal assistants with inbox, browser, CRM, calendar, and integration workflows.
+- 🆓 Free plan with 300 credits per month, one AI employee, and no credit card required.
 
 
 ## ✅ Task Agents
