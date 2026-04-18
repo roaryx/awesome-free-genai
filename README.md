@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-93-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-94-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -202,6 +202,10 @@
 **[Make](https://www.make.com/)** :globe_with_meridians:
 - 📝 Low-code platform for building custom workflows.
 - 🆓 Free plan with 1,000 credits per month
+
+**[Gumloop](https://www.gumloop.com/)** :us:
+- 📝 AI automation platform for building workflow agents that connect to business tools, orchestrate multi-step tasks, and run recurring processes.
+- 🆓 Free plan with 5,000 credits per month, 1 seat, 1 active trigger, and unlimited agents and flows.
 
 
 ## 🛠️ Full Stack Agents
