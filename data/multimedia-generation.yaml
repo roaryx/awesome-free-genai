@@ -111,6 +111,12 @@ agents:
     location: USA
     free_tier: Free plan with 100 compute units per day and limited access to image, video, 3D, and lipsync models.
 
+  - name: QuiverAI
+    url: https://app.quiver.ai/
+    description: AI vector design tool for generating and vectorizing editable SVG graphics, logos, illustrations, and typographic assets from prompts and sketches.
+    location: USA
+    free_tier: Free plan with up to 10 SVGs, 200 weekly credits, and basic SVG export.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
