@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-95-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-96-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -332,6 +332,10 @@
 **[Krea](https://www.krea.ai/)** :us:
 - 📝 AI creative suite for generating, enhancing, and editing images, videos, and 3D assets with realtime tools and access to multiple models.
 - 🆓 Free plan with 100 compute units per day and limited access to image, video, 3D, and lipsync models.
+
+**[QuiverAI](https://app.quiver.ai/)** :us:
+- 📝 AI vector design tool for generating and vectorizing editable SVG graphics, logos, illustrations, and typographic assets from prompts and sketches.
+- 🆓 Free plan with up to 10 SVGs, 200 weekly credits, and basic SVG export.
 
 **[Leonardo AI](https://app.leonardo.ai/)** :australia:
 - 📝 Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
