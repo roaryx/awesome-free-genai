@@ -105,6 +105,12 @@ agents:
     location: India
     free_tier: Free plan with limited credits and exports with the InVideo logo.
 
+  - name: Krea
+    url: https://www.krea.ai/
+    description: AI creative suite for generating, enhancing, and editing images, videos, and 3D assets with realtime tools and access to multiple models.
+    location: USA
+    free_tier: Free plan with 100 compute units per day and limited access to image, video, 3D, and lipsync models.
+
   - name: Leonardo AI
     url: https://app.leonardo.ai/
     description: Creative AI platform for generating images, video, and motion content with presets, realtime tools, and model training.
