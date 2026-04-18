@@ -17,3 +17,9 @@ agents:
     description: Low-code platform for building custom workflows.
     location: Prague
     free_tier: Free plan with 1,000 credits per month
+
+  - name: Gumloop
+    url: https://www.gumloop.com/
+    description: AI automation platform for building workflow agents that connect to business tools, orchestrate multi-step tasks, and run recurring processes.
+    location: USA
+    free_tier: Free plan with 5,000 credits per month, 1 seat, 1 active trigger, and unlimited agents and flows.
