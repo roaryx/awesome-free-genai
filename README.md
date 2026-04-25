@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-96-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-97-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -88,9 +88,9 @@
 
 *Agents that autonomously navigate and interact with web browsers.*
 
-**[BrowserUse](https://github.com/browser-use/browser-use)** :globe_with_meridians:
-- 📝 Open-source Python framework for building AI agents that control web browsers.
-- 🆓 Open-source; free to use with your own LLM API keys.
+**[BrowserUse](https://cloud.browser-use.com/)** :us:
+- 📝 Cloud browser automation platform for running AI agents with managed browsers, proxies, and stealth infrastructure.
+- 🆓 Free plan with 3 concurrent sessions, free browsers and proxies, 10 agent tasks per month, and advanced stealth.
 
 **[Browserbase](https://www.browserbase.com)** :us:
 - 📝 Cloud infrastructure for deploying and running headless browser agents at scale.
@@ -292,6 +292,10 @@
 **[VEED](https://www.veed.io/)** :globe_with_meridians:
 - 📝 AI video creation and editing platform for generating, dubbing, subtitling, and polishing social, marketing, and business videos.
 - 🆓 Free plan with watermark, 10-minute exports, 2 videos per day in Gen-AI Studio, and up to 20 AI videos per month with credits.
+
+**[Creatify](https://app.creatify.ai/)** :us:
+- 📝 AI ad creation platform for generating video ads, image ads, avatar videos, and campaign creatives from product URLs, scripts, and templates.
+- 🆓 Free plan with 10 monthly credits, up to 2 videos per month, and exports with watermark.
 
 **[Kling AI](https://klingai.com)** :cn:
 - 📝 Kuaishou's cinematic AI video generator supporting text-to-video and image-to-video with physics-accurate motion and native audio sync.
