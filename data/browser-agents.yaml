@@ -17,3 +17,21 @@ agents:
     description: Cloud infrastructure for deploying and running headless browser agents at scale.
     location: USA
     free_tier: Free plan with 1 browser hour, 1,000 Fetch API calls, and 1 concurrent browser.
+
+  - name: Kernel
+    url: https://onkernel.com/
+    description: Browser infrastructure for web agents and automations with fast cloud browsers, stealth mode, live session debugging, auth handling, and app co-location.
+    location: USA
+    free_tier: Free plan with $5 monthly credits, 5 concurrent on-demand browsers, 5 concurrent app invocations, live view and logs, and stealth mode.
+
+  - name: Notte
+    url: https://notte.cc/
+    description: Browser platform for AI with remote browser sessions, browser agents, serverless browser functions, authentication primitives, and live debugging tools.
+    location: USA
+    free_tier: Free plan with 100 browser hours forever and up to 5 concurrent browser sessions.
+
+  - name: Skyvern
+    url: https://www.skyvern.com/
+    description: AI-powered browser automation platform for running workflows on websites with support for CAPTCHAs, 2FA, data extraction, and form automation.
+    location: USA
+    free_tier: Free plan with 1,000 credits per month, 1 concurrent run, webhooks, and country geo-targeting.
