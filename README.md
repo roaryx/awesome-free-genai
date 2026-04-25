@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-97-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-100-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -95,6 +95,18 @@
 **[Browserbase](https://www.browserbase.com)** :us:
 - 📝 Cloud infrastructure for deploying and running headless browser agents at scale.
 - 🆓 Free plan with 1 browser hour, 1,000 Fetch API calls, and 1 concurrent browser.
+
+**[Kernel](https://onkernel.com/)** :us:
+- 📝 Browser infrastructure for web agents and automations with fast cloud browsers, stealth mode, live session debugging, auth handling, and app co-location.
+- 🆓 Free plan with $5 monthly credits, 5 concurrent on-demand browsers, 5 concurrent app invocations, live view and logs, and stealth mode.
+
+**[Notte](https://notte.cc/)** :us:
+- 📝 Browser platform for AI with remote browser sessions, browser agents, serverless browser functions, authentication primitives, and live debugging tools.
+- 🆓 Free plan with 100 browser hours forever and up to 5 concurrent browser sessions.
+
+**[Skyvern](https://www.skyvern.com/)** :us:
+- 📝 AI-powered browser automation platform for running workflows on websites with support for CAPTCHAs, 2FA, data extraction, and form automation.
+- 🆓 Free plan with 1,000 credits per month, 1 concurrent run, webhooks, and country geo-targeting.
 
 
 ## 🤖 General-Purpose Agents
