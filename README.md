@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-100-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-101-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -107,6 +107,10 @@
 **[Skyvern](https://www.skyvern.com/)** :us:
 - 📝 AI-powered browser automation platform for running workflows on websites with support for CAPTCHAs, 2FA, data extraction, and form automation.
 - 🆓 Free plan with 1,000 credits per month, 1 concurrent run, webhooks, and country geo-targeting.
+
+**[Firecrawl](https://www.firecrawl.dev/)** :us:
+- 📝 Web data and browser interaction platform for AI agents with search, scrape, crawl, and interact APIs for live websites.
+- 🆓 Free plan with 500 one-time credits, 2 concurrent requests, and 5 free daily agent runs.
 
 
 ## 🤖 General-Purpose Agents
