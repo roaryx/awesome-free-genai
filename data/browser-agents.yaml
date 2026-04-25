@@ -35,3 +35,9 @@ agents:
     description: AI-powered browser automation platform for running workflows on websites with support for CAPTCHAs, 2FA, data extraction, and form automation.
     location: USA
     free_tier: Free plan with 1,000 credits per month, 1 concurrent run, webhooks, and country geo-targeting.
+
+  - name: Firecrawl
+    url: https://www.firecrawl.dev/
+    description: Web data and browser interaction platform for AI agents with search, scrape, crawl, and interact APIs for live websites.
+    location: USA
+    free_tier: Free plan with 500 one-time credits, 2 concurrent requests, and 5 free daily agent runs.
