@@ -7,10 +7,10 @@ description: Agents that autonomously navigate and interact with web browsers.
 
 agents:
   - name: BrowserUse
-    url: https://github.com/browser-use/browser-use
-    description: Open-source Python framework for building AI agents that control web browsers.
-    location: Open Source
-    free_tier: Open-source; free to use with your own LLM API keys.
+    url: https://cloud.browser-use.com/
+    description: Cloud browser automation platform for running AI agents with managed browsers, proxies, and stealth infrastructure.
+    location: USA
+    free_tier: Free plan with 3 concurrent sessions, free browsers and proxies, 10 agent tasks per month, and advanced stealth.
 
   - name: Browserbase
     url: https://www.browserbase.com
