@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-101-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-102-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -271,6 +271,10 @@
 **[Emergent](https://app.emergent.sh/)** :us:
 - 📝 AI app builder for creating production-ready full-stack web and mobile applications through natural language conversations.
 - 🆓 Free plan with 10 monthly credits.
+
+**[Bloom](https://bloom.diy/)** :globe_with_meridians:
+- 📝 AI app builder for creating and sharing production-ready native mobile and web apps from natural language ideas without writing code.
+- 🆓 Free plan with 350 credits per month, 100 MB file storage, realtime database, instant preview on device, and App Clips sharing.
 
 
 ## 🎬 Multimedia Generation
