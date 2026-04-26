@@ -68,3 +68,9 @@ agents:
     description: AI app builder for creating production-ready full-stack web and mobile applications through natural language conversations.
     location: USA
     free_tier: Free plan with 10 monthly credits.
+
+  - name: Bloom
+    url: https://bloom.diy/
+    description: AI app builder for creating and sharing production-ready native mobile and web apps from natural language ideas without writing code.
+    location: Switzerland
+    free_tier: Free plan with 350 credits per month, 100 MB file storage, realtime database, instant preview on device, and App Clips sharing.
