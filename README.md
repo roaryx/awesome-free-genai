@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-102-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-103-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -82,6 +82,10 @@
 **[Agnes](https://app.agnes-ai.com/)** :singapore:
 - 📝 A versatile AI tool that automates research, generates reports, creates presentations
 - 🆓 Free plan with limited usage.
+
+**[Parallel](https://platform.parallel.ai/)** :us:
+- 📝 AI web research platform for deep research, web search, extraction, monitoring, and dataset creation with cited, structured outputs.
+- 🆓 Free to start with up to 16,000 requests across Parallel's APIs and playgrounds.
 
 
 ## 🌐 Browser Agents
