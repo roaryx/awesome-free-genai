@@ -41,3 +41,9 @@ agents:
     description: A versatile AI tool that automates research, generates reports, creates presentations
     location: Singapore
     free_tier: Free plan with limited usage.
+
+  - name: Parallel
+    url: https://platform.parallel.ai/
+    description: AI web research platform for deep research, web search, extraction, monitoring, and dataset creation with cited, structured outputs.
+    location: USA
+    free_tier: Free to start with up to 16,000 requests across Parallel's APIs and playgrounds.
