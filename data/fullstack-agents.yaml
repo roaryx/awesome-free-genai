@@ -74,3 +74,9 @@ agents:
     description: AI app builder for creating and sharing production-ready native mobile and web apps from natural language ideas without writing code.
     location: Switzerland
     free_tier: Free plan with 350 credits per month, 100 MB file storage, realtime database, instant preview on device, and App Clips sharing.
+
+  - name: Anything
+    url: https://www.anything.com/
+    description: AI app builder that turns prompts into full mobile apps, websites, tools, and products with built-in database, publishing, AI integrations, and code generation.
+    location: USA
+    free_tier: Free plan with 3K monthly credits, daily credits up to 10K per month, chat and generation, publishing, and AI integrations.

@@ -99,6 +99,12 @@ agents:
     location: USA
     free_tier: 200 free credits upon signing up.
 
+  - name: Tavus
+    url: https://tavus.io/
+    description: AI video platform for building digital twins, conversational video agents, and real-time AI humans that see, hear, and speak face to face.
+    location: USA
+    free_tier: Free developer plan with 25 minutes of AI conversational video, 5 minutes of AI video generation, and access to 25 stock replicas.
+
   - name: LTX Studio
     url: https://ltx.studio/
     description: AI video production platform for creating storyboards, images, and videos with script-to-video, editing, and creative control tools.
