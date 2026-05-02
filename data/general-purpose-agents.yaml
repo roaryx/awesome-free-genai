@@ -95,4 +95,16 @@ agents:
     description: Multi-model AI chat and leaderboard platform for comparing leading language models side by side.
     location: USA
     free_tier: Free to use with access to multiple AI models.
+
+  - name: Tencent Yuanbao
+    url: https://yuanbao.tencent.com/
+    description: Tencent's general-purpose AI assistant with DeepSeek access, deep thinking, web search, file analysis, and creative chat capabilities.
+    location: China
+    free_tier: Free plan with limited usage.
+
+  - name: Tencent Hunyuan AI Studio
+    url: https://aistudio.tencent.com/
+    description: Tencent's AI studio for chat, multimodal interaction, deep search, translation, AI podcasting, and access to Hunyuan models and research tools.
+    location: China
+    free_tier: Free plan with limited usage.
   
