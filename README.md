@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-105-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-107-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -288,6 +288,10 @@
 - 📝 AI app builder for creating and sharing production-ready native mobile and web apps from natural language ideas without writing code.
 - 🆓 Free plan with 350 credits per month, 100 MB file storage, realtime database, instant preview on device, and App Clips sharing.
 
+**[Anything](https://www.anything.com/)** :us:
+- 📝 AI app builder that turns prompts into full mobile apps, websites, tools, and products with built-in database, publishing, AI integrations, and code generation.
+- 🆓 Free plan with 3K monthly credits, daily credits up to 10K per month, chat and generation, publishing, and AI integrations.
+
 
 ## 🎬 Multimedia Generation
 
@@ -356,6 +360,10 @@
 **[TapNow](https://tapnow.ai/)** :us:
 - 📝 AI visual creation platform for generating e-commerce ads, cinematic videos, and other creative visual content.
 - 🆓 200 free credits upon signing up.
+
+**[Tavus](https://tavus.io/)** :us:
+- 📝 AI video platform for building digital twins, conversational video agents, and real-time AI humans that see, hear, and speak face to face.
+- 🆓 Free developer plan with 25 minutes of AI conversational video, 5 minutes of AI video generation, and access to 25 stock replicas.
 
 **[LTX Studio](https://ltx.studio/)** :globe_with_meridians:
 - 📝 AI video production platform for creating storyboards, images, and videos with script-to-video, editing, and creative control tools.
