@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-103-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-105-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -180,6 +180,14 @@
 **[Arena AI](https://arena.ai/)** :us:
 - 📝 Multi-model AI chat and leaderboard platform for comparing leading language models side by side.
 - 🆓 Free to use with access to multiple AI models.
+
+**[Tencent Yuanbao](https://yuanbao.tencent.com/)** :cn:
+- 📝 Tencent's general-purpose AI assistant with DeepSeek access, deep thinking, web search, file analysis, and creative chat capabilities.
+- 🆓 Free plan with limited usage.
+
+**[Tencent Hunyuan AI Studio](https://aistudio.tencent.com/)** :cn:
+- 📝 Tencent's AI studio for chat, multimodal interaction, deep search, translation, AI podcasting, and access to Hunyuan models and research tools.
+- 🆓 Free plan with limited usage.
 
 
 ## 🎙️ Voice Agents
