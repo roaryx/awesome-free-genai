@@ -1,6 +1,6 @@
 # Contributing to Awesome Free GenAI
 
-Thanks for your interest in contributing! This project is community-driven and we welcome additions of new generative AI tools that offer a **free tier**.
+Thanks for your interest in contributing! This project is community-driven and we welcome additions of new generative AI agents, applications, and infrastructure that offer a **free tier**.
 
 ## How to Add a Tool
 
@@ -56,7 +56,7 @@ Then add the filename stem to the `CATEGORY_ORDER` list in `scripts/build.py` to
 
 - **Free tier required.** Only tools that offer a meaningful free tier are accepted. Paid-only tools do not qualify.
 - **No duplicates.** Check that the tool isn't already listed.
-- **GenAI tools only.** Entries must be generative AI tools — agents, assistants, or creative tools powered by AI. Standalone models or raw datasets do not qualify.
+- **Generative AI entries only.** Entries must be generative AI agents, applications, or infrastructure. Standalone models or raw datasets do not qualify.
 - **Active tools only.** The tool should be publicly available and actively maintained.
 - **Neutral descriptions.** Avoid marketing language; be factual and concise.
 - **Alphabetical order** within each category is preferred but not strictly required.
