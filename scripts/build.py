@@ -29,6 +29,7 @@ CATEGORY_ORDER = [
     "general-purpose-agents",
     "voice-agents",
     "workflow-agents",
+    "sandbox-platforms",
     "fullstack-agents",
     "multimedia-generation",
     "personal-assistants",

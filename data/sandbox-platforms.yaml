@@ -1,0 +1,31 @@
+# Sandbox Platforms
+# Each entry should follow the schema defined in CONTRIBUTING.md
+
+category: Sandbox Platforms
+icon: "🧪"
+description: Secure cloud sandboxes and execution environments for AI agents to run code, tools, and workloads.
+
+agents:
+  - name: Blaxel
+    url: https://app.blaxel.ai/
+    description: Persistent sandbox platform for AI agents with secure sandboxes, co-hosted agents, shared storage, and low-latency resume.
+    location: USA
+    free_tier: Free plan with up to $200 in credits to get started and no base subscription before usage charges apply.
+
+  - name: Daytona
+    url: https://www.daytona.io/
+    description: Secure sandbox infrastructure for AI agents with isolated workspaces, code execution, and browser automation in a cloud development environment.
+    location: USA
+    free_tier: Free tier includes $200 in compute credits and 5 GB of storage before pay-as-you-go usage.
+
+  - name: Northflank
+    url: https://app.northflank.com/
+    description: Cloud platform with sandboxes, deployments, jobs, databases, and GPU workloads on Northflank Cloud or your own cloud.
+    location: UK
+    free_tier: Free project limits include 0.2 vCPU, 512 MB RAM, about 6 GB storage, 1 replica/instance, up to 2 services and 2 jobs, and 1 addon.
+
+  - name: E2B
+    url: https://e2b.dev/
+    description: Secure cloud sandbox platform that gives AI agents isolated computers and tools for code execution and real-world tasks.
+    location: USA
+    free_tier: Free Hobby tier with a one-time $100 of usage credits, up to 1-hour sandbox sessions, and up to 20 concurrently running sandboxes.
