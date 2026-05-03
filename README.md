@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-107-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-111-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
@@ -18,6 +18,7 @@
 - [🤖 General-Purpose Agents](#general-purpose-agents)
 - [🎙️ Voice Agents](#voice-agents)
 - [⚙️ Workflow Agents](#workflow-agents)
+- [🧪 Sandbox Platforms](#sandbox-platforms)
 - [🛠️ Full Stack Agents](#full-stack-agents)
 - [🎬 Multimedia Generation](#multimedia-generation)
 - [🧑‍💼 Personal Assistants](#personal-assistants)
@@ -234,6 +235,27 @@
 **[Gumloop](https://www.gumloop.com/)** :us:
 - 📝 AI automation platform for building workflow agents that connect to business tools, orchestrate multi-step tasks, and run recurring processes.
 - 🆓 Free plan with 5,000 credits per month, 1 seat, 1 active trigger, and unlimited agents and flows.
+
+
+## 🧪 Sandbox Platforms
+
+*Secure cloud sandboxes and execution environments for AI agents to run code, tools, and workloads.*
+
+**[Blaxel](https://app.blaxel.ai/)** :us:
+- 📝 Persistent sandbox platform for AI agents with secure sandboxes, co-hosted agents, shared storage, and low-latency resume.
+- 🆓 Free plan with up to $200 in credits to get started and no base subscription before usage charges apply.
+
+**[Daytona](https://www.daytona.io/)** :us:
+- 📝 Secure sandbox infrastructure for AI agents with isolated workspaces, code execution, and browser automation in a cloud development environment.
+- 🆓 Free tier includes $200 in compute credits and 5 GB of storage before pay-as-you-go usage.
+
+**[Northflank](https://app.northflank.com/)** :globe_with_meridians:
+- 📝 Cloud platform with sandboxes, deployments, jobs, databases, and GPU workloads on Northflank Cloud or your own cloud.
+- 🆓 Free project limits include 0.2 vCPU, 512 MB RAM, about 6 GB storage, 1 replica/instance, up to 2 services and 2 jobs, and 1 addon.
+
+**[E2B](https://e2b.dev/)** :us:
+- 📝 Secure cloud sandbox platform that gives AI agents isolated computers and tools for code execution and real-world tasks.
+- 🆓 Free Hobby tier with a one-time $100 of usage credits, up to 1-hour sandbox sessions, and up to 20 concurrently running sandboxes.
 
 
 ## 🛠️ Full Stack Agents
