@@ -1,10 +1,10 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-111-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-113-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
-> A curated list of generative AI tools with free tiers — from coding agents and conversational assistants to multimedia generation and more.
+> A curated list of generative AI agents, applications, and infrastructure with free tiers.
 
 **[Browse the interactive list &rarr;](https://roaryx.github.io/awesome-free-genai/)**
 
@@ -248,6 +248,14 @@
 **[Daytona](https://www.daytona.io/)** :us:
 - 📝 Secure sandbox infrastructure for AI agents with isolated workspaces, code execution, and browser automation in a cloud development environment.
 - 🆓 Free tier includes $200 in compute credits and 5 GB of storage before pay-as-you-go usage.
+
+**[Freestyle](https://dash.freestyle.sh/)** :us:
+- 📝 Sandbox platform for coding agents with Linux VMs, runs, deployments, Git-backed workflows, and fast pause-resume infrastructure.
+- 🆓 Free plan includes up to 10 concurrent VMs, 20 free vCPU-hours/day, 40 GiB memory-hours/day, 16,800 GiB storage-hours/day, 500 runs/month, and 5 managed domains.
+
+**[InstaVM](https://dashboard.instavm.io/)** :us:
+- 📝 Production sandbox platform for AI agents with isolated Firecracker microVMs, secure code execution, browser sessions, and runtime controls.
+- 🆓 Free tier includes $50 in credits, 10 GB of included volume storage, 5 concurrent VMs, 100 browser sessions per month, and no credit card required.
 
 **[Northflank](https://app.northflank.com/)** :globe_with_meridians:
 - 📝 Cloud platform with sandboxes, deployments, jobs, databases, and GPU workloads on Northflank Cloud or your own cloud.
