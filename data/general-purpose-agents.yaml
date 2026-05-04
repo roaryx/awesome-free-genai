@@ -107,4 +107,9 @@ agents:
     description: Tencent's AI studio for chat, multimodal interaction, deep search, translation, AI podcasting, and access to Hunyuan models and research tools.
     location: China
     free_tier: Free plan with limited usage.
-  
+
+  - name: Venice
+    url: https://venice.ai/
+    description: Privacy-first AI assistant and API for text, image, audio, video, and character generation using open-source models.
+    location: USA
+    free_tier: Free plan with 10 text prompts and 15 image prompts per day; mature filter cannot be disabled.
