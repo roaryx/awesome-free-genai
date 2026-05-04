@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-113-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-114-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI agents, applications, and infrastructure with free tiers.
@@ -189,6 +189,10 @@
 **[Tencent Hunyuan AI Studio](https://aistudio.tencent.com/)** :cn:
 - 📝 Tencent's AI studio for chat, multimodal interaction, deep search, translation, AI podcasting, and access to Hunyuan models and research tools.
 - 🆓 Free plan with limited usage.
+
+**[Venice](https://venice.ai/)** :us:
+- 📝 Privacy-first AI assistant and API for text, image, audio, video, and character generation using open-source models.
+- 🆓 Free plan with 10 text prompts and 15 image prompts per day; mature filter cannot be disabled.
 
 
 ## 🎙️ Voice Agents
