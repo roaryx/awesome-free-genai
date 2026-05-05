@@ -41,3 +41,9 @@ agents:
     description: Web data and browser interaction platform for AI agents with search, scrape, crawl, and interact APIs for live websites.
     location: USA
     free_tier: Free plan with 500 one-time credits, 2 concurrent requests, and 5 free daily agent runs.
+
+  - name: TinyFish
+    url: https://agent.tinyfish.ai/
+    description: Enterprise infrastructure for AI web agents with search, fetch, browser sessions, and multi-step web automation.
+    location: USA
+    free_tier: Free plan with 500 credits, 2 concurrent agents, 2 concurrent browser sessions, and free Search and Fetch API usage.
