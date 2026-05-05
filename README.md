@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-114-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-115-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI agents, applications, and infrastructure with free tiers.
@@ -116,6 +116,10 @@
 **[Firecrawl](https://www.firecrawl.dev/)** :us:
 - 📝 Web data and browser interaction platform for AI agents with search, scrape, crawl, and interact APIs for live websites.
 - 🆓 Free plan with 500 one-time credits, 2 concurrent requests, and 5 free daily agent runs.
+
+**[TinyFish](https://agent.tinyfish.ai/)** :us:
+- 📝 Enterprise infrastructure for AI web agents with search, fetch, browser sessions, and multi-step web automation.
+- 🆓 Free plan with 500 credits, 2 concurrent agents, 2 concurrent browser sessions, and free Search and Fetch API usage.
 
 
 ## 🤖 General-Purpose Agents
