@@ -4,54 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Free GenAI</title>
-  <meta name="description" content="A curated list of generative AI agents, applications, and infrastructure with free tiers.">
+  <meta name="description" content="A curated directory of generative AI tools with genuinely usable free tiers.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23111'/%3E%3Cpath d='M12 4 L13.4 10.6 L20 12 L13.4 13.4 L12 20 L10.6 13.4 L4 12 L10.6 10.6 Z' fill='white'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("afg-theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved || (prefersDark ? "dark" : "light");
+        if (theme === "dark") document.documentElement.classList.add("dark");
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Awesome Free GenAI</h1>
-      <p class="tagline">A curated list of generative AI agents, applications, and infrastructure with free tiers.</p>
-      <div class="header-actions">
-        <a href="https://github.com/roaryx/awesome-free-genai" class="btn btn-github" target="_blank" rel="noopener">
-          GitHub Repo
-        </a>
-        <button id="theme-toggle" class="btn btn-theme" aria-label="Toggle dark mode">
-          <span class="theme-icon">🌙</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="controls">
-      <input
-        type="search"
-        id="search-input"
-        placeholder="Search tools by name or description..."
-        aria-label="Search tools"
-      >
-      <div class="filters">
-        <div class="filter-group">
-          <label for="category-filter">Category</label>
-          <select id="category-filter">
-            <option value="all">All Categories</option>
-          </select>
-        </div>
-      </div>
-      <div id="results-count" class="results-count"></div>
-    </div>
-
-    <div id="categories-container"></div>
-  </main>
-
-  <footer>
-    <p>
-      Built with data from <a href="https://github.com/roaryx/awesome-free-genai/tree/main/data" target="_blank" rel="noopener">YAML data files</a>.
-      <a href="https://github.com/roaryx/awesome-free-genai/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a tool &rarr;</a>
-    </p>
-  </footer>
-
+  <div id="app"></div>
   <script src="app.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@ Reads all YAML data files from data/ and generates:
 """
 
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -36,9 +37,58 @@ CATEGORY_ORDER = [
 ]
 
 
-def load_data() -> list[dict]:
-    """Load all YAML data files in the defined category order."""
-    categories = []
+def slugify(value: str) -> str:
+    value = value.strip().lower()
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    return value.strip("-")
+
+
+def classify_free_tier(free_tier: str) -> str:
+    """Heuristically map a free_tier sentence to one of six canonical types."""
+    if not free_tier:
+        return "Free Plan"
+    t = free_tier.lower()
+    if "open source" in t or "open-source" in t or "mit license" in t or "apache" in t:
+        return "Open Source"
+    if "credit" in t:
+        return "Free Credits"
+    if "trial" in t:
+        return "Free Trial"
+    if "freemium" in t:
+        return "Freemium"
+    return "Free Plan"
+
+
+def enrich_categories(categories: list[dict], stems: list[str]) -> list[dict]:
+    """Add slug + per-agent slug & free_tier_type to each category dict."""
+    enriched: list[dict] = []
+    for cat, stem in zip(categories, stems):
+        cat_slug = stem
+        agents = []
+        for agent in cat.get("agents", []) or []:
+            a = dict(agent)
+            a["slug"] = slugify(a.get("name", ""))
+            a["category_slug"] = cat_slug
+            a["category"] = cat.get("category", "")
+            a["free_tier_type"] = classify_free_tier(a.get("free_tier", "") or "")
+            agents.append(a)
+        enriched.append({
+            **cat,
+            "slug": cat_slug,
+            "agents": agents,
+        })
+    return enriched
+
+
+def load_data() -> tuple[list[dict], list[str]]:
+    """Load all YAML data files in the defined category order.
+
+    Returns (categories, stems) so downstream consumers can use the filename
+    stem as the canonical category slug.
+    """
+    categories: list[dict] = []
+    stems: list[str] = []
+    seen: set[str] = set()
     for stem in CATEGORY_ORDER:
         path = DATA_DIR / f"{stem}.yaml"
         if not path.exists():
@@ -47,13 +97,17 @@ def load_data() -> list[dict]:
         with open(path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
         categories.append(data)
+        stems.append(stem)
+        seen.add(stem)
     # Also pick up any YAML files not in the explicit order
     for path in sorted(DATA_DIR.glob("*.yaml")):
-        if path.stem not in CATEGORY_ORDER:
-            with open(path, "r", encoding="utf-8") as f:
-                data = yaml.safe_load(f)
-            categories.append(data)
-    return categories
+        if path.stem in seen:
+            continue
+        with open(path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        categories.append(data)
+        stems.append(path.stem)
+    return categories, stems
 
 
 def generate_readme(categories: list[dict]) -> str:
@@ -93,7 +147,7 @@ def build_dist(categories: list[dict]) -> None:
 
 def main() -> None:
     print("Loading YAML data files...")
-    categories = load_data()
+    categories, stems = load_data()
 
     if not categories:
         print("Error: No data files found in data/", file=sys.stderr)
@@ -106,8 +160,11 @@ def main() -> None:
     readme = generate_readme(categories)
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
 
+    print("Enriching data for the SPA...")
+    enriched = enrich_categories(categories, stems)
+
     print("Building dist/...")
-    build_dist(categories)
+    build_dist(enriched)
 
     print("Done!")
 
