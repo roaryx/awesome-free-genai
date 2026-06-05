@@ -2,17 +2,20 @@
  * Awesome Free GenAI — SPA
  *
  * Single-file vanilla JS app fed by data.json (built by scripts/build.py
- * from data/*.yaml). Hash-based router so the site stays a static drop.
+ * from data/*.yaml). The build emits matching static HTML files so GitHub
+ * Pages can serve crawlable clean URLs without server-side rewrites.
  *
- *   #/              Home
- *   #/tools         Browse (search + filters)
- *   #/category/:s   Browse, scoped to one category
- *   #/tool/:slug    Tool detail
- *   #/submit        Suggest a tool
- *   #/about         About
+ *   /                  Home
+ *   /tools/            Browse (search + filters)
+ *   /category/:slug/   Browse, scoped to one category
+ *   /tool/:slug/       Tool detail
+ *   /submit/           Suggest a tool
+ *   /about/            About
  *
- *   Query params live in the hash after `?`, e.g.
- *   #/tools?q=voice&type=Open+Source&tag=cli&sort=az
+ *   Browse query params stay in the URL after `?`, e.g.
+ *   /tools/?q=voice&type=Open+Source&tag=cli&sort=az
+ *
+ *   Legacy hash routes such as #/tool/chatgpt remain supported for old links.
  */
 
 (function () {
@@ -20,11 +23,13 @@
 
   // ── Constants ────────────────────────────────────────────
   const GITHUB_URL = "https://github.com/roaryx/awesome-free-genai";
+  const BASE_PATH = normalizeBasePath(window.AFG_BASE_PATH || "");
+  const ASSET_PREFIX = window.AFG_ASSET_PREFIX || "";
   const NAV = [
-    { to: "#/tools", label: "Browse" },
-    { to: "#/", label: "Categories", scrollTo: "categories" },
-    { to: "#/submit", label: "Submit" },
-    { to: "#/about", label: "About" },
+    { to: "/tools/", label: "Browse" },
+    { to: "/", label: "Categories", scrollTo: "categories" },
+    { to: "/submit/", label: "Submit" },
+    { to: "/about/", label: "About" },
   ];
   const POPULAR_QUERIES = ["Cursor", "ChatGPT", "Claude", "Suno", "ElevenLabs"];
   const FREE_TIER_TYPES = [
@@ -63,6 +68,48 @@
 
   // ── Utilities ────────────────────────────────────────────
   const $ = (id) => document.getElementById(id);
+
+  function normalizeBasePath(value) {
+    const clean = String(value || "").replace(/\/+$/, "");
+    return clean === "/" ? "" : clean;
+  }
+
+  function normalizeRoutePath(value) {
+    let path = String(value || "/").split("?")[0].split("#")[0] || "/";
+    if (!path.startsWith("/")) path = "/" + path;
+    path = path.replace(/\/+$/, "");
+    return path || "/";
+  }
+
+  function urlFor(path, params) {
+    const normalized = normalizeRoutePath(path);
+    const route = normalized === "/" ? "/" : normalized + "/";
+    const qs = params ? (params instanceof URLSearchParams ? params.toString() : new URLSearchParams(params).toString()) : "";
+    return BASE_PATH + route + (qs ? "?" + qs : "");
+  }
+
+  function legacyHashToUrl(hash) {
+    const raw = String(hash || "").replace(/^#/, "") || "/";
+    const [pathPart, queryPart] = raw.split("?");
+    return urlFor(pathPart || "/", new URLSearchParams(queryPart || ""));
+  }
+
+  function stripBasePath(pathname) {
+    let path = pathname || "/";
+    if (BASE_PATH && (path === BASE_PATH || path.startsWith(BASE_PATH + "/"))) {
+      path = path.slice(BASE_PATH.length) || "/";
+    }
+    return normalizeRoutePath(path);
+  }
+
+  function isInternalUrl(url) {
+    try {
+      const target = new URL(url, window.location.href);
+      return target.origin === window.location.origin && (!BASE_PATH || target.pathname === BASE_PATH || target.pathname.startsWith(BASE_PATH + "/"));
+    } catch (e) {
+      return false;
+    }
+  }
 
   function escape(value) {
     if (value === null || value === undefined) return "";
@@ -104,28 +151,34 @@
   }
 
   function parseHash() {
-    const raw = window.location.hash.replace(/^#/, "") || "/";
-    const [pathPart, queryPart] = raw.split("?");
-    const segments = pathPart.split("/").filter(Boolean);
-    const params = new URLSearchParams(queryPart || "");
-    return { path: pathPart, segments, params };
+    // Backward compatibility: old shared links such as #/tool/cursor still work.
+    if (window.location.hash && window.location.hash.startsWith("#/")) {
+      const raw = window.location.hash.replace(/^#/, "") || "/";
+      const [pathPart, queryPart] = raw.split("?");
+      const path = normalizeRoutePath(pathPart || "/");
+      const segments = path.split("/").filter(Boolean);
+      const params = new URLSearchParams(queryPart || "");
+      return { path, segments, params };
+    }
+
+    const path = stripBasePath(window.location.pathname);
+    const segments = path.split("/").filter(Boolean);
+    const params = new URLSearchParams(window.location.search || "");
+    return { path, segments, params };
   }
 
   function buildHash(path, params) {
-    let qs = "";
-    if (params) {
-      const usp = params instanceof URLSearchParams ? params : new URLSearchParams(params);
-      const str = usp.toString();
-      if (str) qs = "?" + str;
-    }
-    return "#" + path + qs;
+    return urlFor(path, params);
   }
 
-  function navigate(hash) {
-    if (window.location.hash === hash) {
+  function navigate(target) {
+    const next = target && target.startsWith("#/") ? legacyHashToUrl(target) : target;
+    const current = window.location.pathname + window.location.search;
+    if (current === next) {
       render();
     } else {
-      window.location.hash = hash;
+      history.pushState(null, "", next);
+      render();
     }
   }
 
@@ -310,7 +363,7 @@
     const cat = CATEGORY_BY_SLUG[tool.category_slug];
     const tagsToShow = (tool.tags || []).slice(0, featured ? 3 : 2);
     return `
-      <a href="#/tool/${escape(tool.slug)}" class="card ${featured ? "card--featured" : ""}">
+      <a href="${urlFor(`/tool/${tool.slug}/`)}" class="card ${featured ? "card--featured" : ""}">
         <div class="card__head">
           <div class="card__main">
             <span class="card__icon">${icon(categoryIcon(tool.category_slug), 16)}</span>
@@ -333,7 +386,7 @@
   function categoryCard(cat) {
     const count = (cat.agents || []).length;
     return `
-      <a href="#/category/${escape(cat.slug)}" class="card">
+      <a href="${urlFor(`/category/${cat.slug}/`)}" class="card">
         <div class="card__head">
           <span class="card__icon card__icon--lg">${icon(categoryIcon(cat.slug), 20)}</span>
           <span class="card__arrow">${icon("arrowUpRight", 16)}</span>
@@ -351,17 +404,18 @@
   function header(activePath) {
     const isActive = (item) => {
       if (item.scrollTo) return false; // Categories anchor is never the "active" page.
-      if (item.to === "#/") return activePath === "/";
-      return activePath.startsWith(item.to.slice(1));
+      if (item.to === "/") return activePath === "/";
+      const itemPath = normalizeRoutePath(item.to);
+      return activePath === itemPath || activePath.startsWith(itemPath + "/");
     };
     const navLink = (n, cls) => {
       const scrollAttr = n.scrollTo ? ` data-scroll-to="${escape(n.scrollTo)}"` : "";
-      return `<a href="${n.to}" class="${cls} ${isActive(n) ? "is-active" : ""}"${scrollAttr}>${escape(n.label)}</a>`;
+      return `<a href="${urlFor(n.to)}" class="${cls} ${isActive(n) ? "is-active" : ""}"${scrollAttr}>${escape(n.label)}</a>`;
     };
     return `
       <header class="site-header">
         <div class="container site-header__row">
-          <a href="#/" class="brand" aria-label="Awesome Free GenAI home">
+          <a href="${urlFor("/")}" class="brand" aria-label="Awesome Free GenAI home">
             <span class="brand__mark">${icon("logo", 16)}</span>
             <span>Awesome Free <span class="mono">GenAI</span></span>
           </a>
@@ -369,7 +423,7 @@
             ${NAV.map((n) => navLink(n, "nav__link")).join("")}
           </nav>
           <div class="header-actions">
-            <a href="#/submit" class="btn btn--primary btn--sm header-cta">Suggest a tool</a>
+            <a href="${urlFor("/submit/")}" class="btn btn--primary btn--sm header-cta">Suggest a tool</a>
             <button type="button" class="theme-toggle" data-action="toggle-theme" aria-label="Toggle theme">
               <span class="icon-sun">${icon("sun", 16)}</span>
               <span class="icon-moon">${icon("moon", 16)}</span>
@@ -396,7 +450,7 @@
       <footer class="site-footer">
         <div class="container site-footer__grid">
           <div>
-            <a href="#/" class="brand">
+            <a href="${urlFor("/")}" class="brand">
               <span class="brand__mark">${icon("logo", 16)}</span>
               <span>Awesome Free <span class="mono">GenAI</span></span>
             </a>
@@ -406,15 +460,15 @@
           <div>
             <h4>Categories</h4>
             <ul>
-              ${featured.map((c) => `<li><a href="#/category/${escape(c.slug)}">${escape(c.category)}</a></li>`).join("")}
+              ${featured.map((c) => `<li><a href="${urlFor(`/category/${c.slug}/`)}">${escape(c.category)}</a></li>`).join("")}
             </ul>
           </div>
           <div>
             <h4>Directory</h4>
             <ul>
-              <li><a href="#/tools">All tools</a></li>
-              <li><a href="#/submit">Suggest a tool</a></li>
-              <li><a href="#/about">About</a></li>
+              <li><a href="${urlFor("/tools/")}">All tools</a></li>
+              <li><a href="${urlFor("/submit/")}">Suggest a tool</a></li>
+              <li><a href="${urlFor("/about/")}">About</a></li>
             </ul>
           </div>
         </div>
@@ -456,7 +510,7 @@
           eyebrow: "Editor’s picks",
           title: "Featured this month",
           desc: "A few standouts our curators are recommending right now.",
-          action: `<a href="#/tools?sort=featured" class="section-link">View all ${icon("arrowRight", 14)}</a>`,
+          action: `<a href="${urlFor("/tools/", { sort: "featured" })}" class="section-link">View all ${icon("arrowRight", 14)}</a>`,
         })}
         <div class="grid grid--featured">
           ${featuredList.map((t) => toolCard(t, "featured")).join("")}
@@ -479,7 +533,7 @@
           eyebrow: "Fresh",
           title: "Recently added",
           desc: "The newest additions to the directory.",
-          action: `<a href="#/tools" class="section-link">See all ${icon("arrowRight", 14)}</a>`,
+          action: `<a href="${urlFor("/tools/")}" class="section-link">See all ${icon("arrowRight", 14)}</a>`,
         })}
         <div class="grid grid--cards">
           ${recent.map((t) => toolCard(t)).join("")}
@@ -507,8 +561,8 @@
           <h2 class="cta__title">Know a tool we’re missing?</h2>
           <p class="cta__sub">Suggest it. If it’s good and the free tier is real, we’ll add it.</p>
           <div class="cta__row">
-            <a href="#/submit" class="btn btn--primary btn--lg">Suggest a tool</a>
-            <a href="#/tools" class="btn btn--outline btn--lg">Browse the directory</a>
+            <a href="${urlFor("/submit/")}" class="btn btn--primary btn--lg">Suggest a tool</a>
+            <a href="${urlFor("/tools/")}" class="btn btn--outline btn--lg">Browse the directory</a>
           </div>
         </div>
       </section>
@@ -554,7 +608,7 @@
       <div class="container section section--snug">
         <div class="page-head">
           ${titleCategory
-            ? `<a href="#/tools" style="font-size:0.875rem;color:var(--muted-foreground);display:inline-flex;align-items:center;gap:0.25rem">← All tools</a>
+            ? `<a href="${urlFor("/tools/")}" style="font-size:0.875rem;color:var(--muted-foreground);display:inline-flex;align-items:center;gap:0.25rem">← All tools</a>
                <div style="margin-top:0.75rem;display:flex;align-items:center;gap:0.75rem">
                  <span class="detail-header__icon" style="width:2.75rem;height:2.75rem;font-size:1.125rem">${icon(categoryIcon(titleCategory.slug), 20)}</span>
                  <div>
@@ -605,7 +659,7 @@
             ${results.length === 0
               ? `<div class="empty">
                   <h3 class="empty__title">No tools match those filters</h3>
-                  <p class="empty__copy">Try removing a filter, broadening your search, or <a href="#/submit" style="text-decoration:underline">suggest a tool</a> we’re missing.</p>
+                  <p class="empty__copy">Try removing a filter, broadening your search, or <a href="${urlFor("/submit/")}" style="text-decoration:underline">suggest a tool</a> we’re missing.</p>
                   <div class="empty__actions"><button class="btn btn--outline" data-action="clear-filters">Clear filters</button></div>
                 </div>`
               : `<div class="grid grid--cards" style="margin-top:0">${results.map((t) => toolCard(t)).join("")}</div>`}
@@ -676,9 +730,9 @@
     return `
       <article class="container section section--snug">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="#/">Home</a>
+          <a href="${urlFor("/")}">Home</a>
           <span class="breadcrumb__sep">${icon("chevronRight", 12)}</span>
-          <a href="#/category/${escape(tool.category_slug)}">${escape(cat ? cat.category : "")}</a>
+          <a href="${urlFor(`/category/${tool.category_slug}/`)}">${escape(cat ? cat.category : "")}</a>
           <span class="breadcrumb__sep">${icon("chevronRight", 12)}</span>
           <span class="breadcrumb__page">${escape(tool.name)}</span>
         </nav>
@@ -690,7 +744,7 @@
               <h1 class="detail-header__title">${escape(tool.name)} <span style="font-size:0.7em">${escape(LOCATION_FLAG[tool.location] || "")}</span></h1>
               <p class="detail-header__desc">${escape(tool.description)}</p>
               <div class="detail-header__meta">
-                <a href="#/category/${escape(tool.category_slug)}" class="detail-cat-chip">
+                <a href="${urlFor(`/category/${tool.category_slug}/`)}" class="detail-cat-chip">
                   ${icon(categoryIcon(tool.category_slug), 12)} ${escape(cat ? cat.category : "")}
                 </a>
                 ${ftBadge(tool.free_tier_type, "md")}
@@ -751,7 +805,7 @@
                 ` : ""}
                 <div>
                   <dt>Category</dt>
-                  <dd><a href="#/category/${escape(tool.category_slug)}">${escape(cat ? cat.category : "")}</a></dd>
+                  <dd><a href="${urlFor(`/category/${tool.category_slug}/`)}">${escape(cat ? cat.category : "")}</a></dd>
                 </div>
               </dl>
             </div>
@@ -861,8 +915,8 @@
             <p>Submissions are reviewed by humans. Tools that quietly nuke their free tier get re-labeled or removed.</p>
           </div>
           <div style="margin-top:2rem;display:flex;gap:0.75rem">
-            <a href="#/tools" class="btn btn--primary">Browse the directory</a>
-            <a href="#/submit" class="btn btn--outline">Suggest a tool</a>
+            <a href="${urlFor("/tools/")}" class="btn btn--primary">Browse the directory</a>
+            <a href="${urlFor("/submit/")}" class="btn btn--outline">Suggest a tool</a>
           </div>
         </div>
       </div>
@@ -876,8 +930,8 @@
         <h1 class="page-title" style="margin-top:0.5rem">Page not found</h1>
         <p class="page-sub">The page you’re looking for doesn’t exist, or never did.</p>
         <div style="margin-top:1.5rem;display:flex;justify-content:center;gap:0.75rem">
-          <a href="#/" class="btn btn--primary">Back home</a>
-          <a href="#/tools" class="btn btn--outline">Browse tools</a>
+          <a href="${urlFor("/")}" class="btn btn--primary">Back home</a>
+          <a href="${urlFor("/tools/")}" class="btn btn--outline">Browse tools</a>
         </div>
       </div>
     `;
@@ -942,18 +996,26 @@
 
   // ── Event delegation ────────────────────────────────────
   function onAppClick(e) {
+    const cleanLink = e.target.closest("a[href]");
+    if (cleanLink && !cleanLink.target && isInternalUrl(cleanLink.href) && !cleanLink.hasAttribute("data-scroll-to")) {
+      e.preventDefault();
+      mobileNavOpen = false;
+      navigate(cleanLink.href);
+      return;
+    }
+
     const scrollLink = e.target.closest("[data-scroll-to]");
     if (scrollLink) {
       e.preventDefault();
       const id = scrollLink.getAttribute("data-scroll-to");
       mobileNavOpen = false;
-      const onHome = window.location.hash === "" || window.location.hash === "#/" || window.location.hash === "#";
+      const onHome = parseHash().path === "/";
       if (onHome) {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
       } else {
         pendingScrollTo = id;
-        navigate("#/");
+        navigate(urlFor("/"));
       }
       return;
     }
@@ -979,7 +1041,7 @@
     if (action === "popular-query") {
       e.preventDefault();
       const q = target.getAttribute("data-q") || "";
-      navigate("#/tools?q=" + encodeURIComponent(q));
+      navigate(urlFor("/tools/", { q }));
       return;
     }
     if (action === "remove-chip") {
@@ -1059,7 +1121,7 @@
       e.preventDefault();
       const input = form.querySelector("input[name='q']");
       const q = input ? input.value.trim() : "";
-      navigate(q ? "#/tools?q=" + encodeURIComponent(q) : "#/tools");
+      navigate(q ? urlFor("/tools/", { q }) : urlFor("/tools/"));
     }
   }
 
@@ -1081,7 +1143,7 @@
   // ── Data load + boot ───────────────────────────────────
   async function loadData() {
     try {
-      const resp = await fetch("data.json", { cache: "no-store" });
+      const resp = await fetch(ASSET_PREFIX + "data.json", { cache: "no-store" });
       if (!resp.ok) throw new Error("HTTP " + resp.status);
       const raw = await resp.json();
       DATA = raw;
@@ -1117,6 +1179,11 @@
     document.addEventListener("input", onAppInput);
     document.addEventListener("change", onAppChange);
     document.addEventListener("submit", onAppSubmit);
+    window.addEventListener("popstate", () => {
+      mobileNavOpen = false;
+      render();
+      restoreFocus();
+    });
     window.addEventListener("hashchange", () => {
       mobileNavOpen = false;
       render();
