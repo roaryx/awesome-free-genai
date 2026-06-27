@@ -89,3 +89,15 @@ agents:
     description: Cloud OpenClaw platform for deploying AI employees and personal assistants with inbox, browser, CRM, calendar, and integration workflows.
     location: USA
     free_tier: Free plan with 300 credits per month, one AI employee, and no credit card required.
+
+  - name: MoClaw
+    url: https://moclaw.ai/
+    description: AI personal assistant platform offering browser automation, integrations, and continuous task execution.
+    location: USA
+    free_tier: Free plan with limited usage.
+
+  - name: Jarvie
+    url: https://heyjarvie.com/
+    description: AI assistant for productivity, writing, and task automation with a focus on personal workflows.
+    location: USA
+    free_tier: Free plan with limited usage.
