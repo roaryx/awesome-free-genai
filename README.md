@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-124-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-126-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI agents, applications, and infrastructure with free tiers.
@@ -370,6 +370,14 @@
 **[Flowmusic](https://www.flowmusic.app/)** :us:
 - 📝 Generative AI music platform for creating, remixing, and sharing studio-quality songs with personalized sound.
 - 🆓 Free plan with daily credits and access to core music creation and remix tools.
+
+**[Flora](https://flora.ai/)** :us:
+- 📝 Creative AI platform for building visual and multimedia workflows with generative tools for design and content creation.
+- 🆓 Free plan includes limited usage for exploration.
+
+**[Reve](https://www.reve.com/)** :us:
+- 📝 AI image generation platform focused on controllable, high-resolution creative workflows with code-like editing.
+- 🆓 Free accounts receive an introductory allocation of creative energy and a daily refresh thereafter.
 
 **[Murf AI](https://murf.ai)** :us:
 - 📝 AI voice generator for voiceovers, presentations, and videos with 200+ voices across 20+ languages.
