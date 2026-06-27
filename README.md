@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-119-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-123-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI agents, applications, and infrastructure with free tiers.
@@ -350,6 +350,22 @@
 **[Udio](https://www.udio.com)** :us:
 - 📝 AI-powered music creation tool with high-fidelity audio output and stem downloads.
 - 🆓 Free plan with 10 daily credits and 100 monthly credits.
+
+**[Treblo](https://treblo.com/)** :us:
+- 📝 AI music generation platform for creating songs from prompts with unlimited free generation on the latest model.
+- 🆓 Free plan with unlimited songs and no usage restrictions on generated music.
+
+**[Mureka](https://mureka.ai/)** :us:
+- 📝 AI music generator for creating original songs, beats, and soundtracks from prompts and reference audio.
+- 🆓 Free trial with limited generation access for new users.
+
+**[FreeMusic.ai](https://www.freemusic.ai/)** :us:
+- 📝 AI music generator for creating royalty-free songs, lyrics, vocals, and remixes from prompts.
+- 🆓 Free plan with monthly creation credits and access to music, lyrics, vocals, remix, and stems tools.
+
+**[Flowmusic](https://www.flowmusic.app/)** :us:
+- 📝 Generative AI music platform for creating, remixing, and sharing studio-quality songs with personalized sound.
+- 🆓 Free plan with daily credits and access to core music creation and remix tools.
 
 **[Murf AI](https://murf.ai)** :us:
 - 📝 AI voice generator for voiceovers, presentations, and videos with 200+ voices across 20+ languages.
