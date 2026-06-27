@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-115-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-119-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI agents, applications, and infrastructure with free tiers.
@@ -226,6 +226,10 @@
 **[Smallest AI](https://smallest.ai)** :us:
 - 📝 Voice agentic platform with ultra-low latency TTS, STT, and speech-to-speech models for building production-grade voice agents at scale.
 - 🆓 Free to sign up with playground access; API usage is pay-as-you-go with no minimum spend.
+
+**[Realtime AI](https://realtime.ai/)** :us:
+- 📝 Real-time voice AI platform for building conversational agents with low-latency speech and live interaction.
+- 🆓 Free tier available with limited usage.
 
 
 ## ⚙️ Workflow Agents
@@ -523,6 +527,18 @@
 **[StartClaw](https://startclaw.com/)** :us:
 - 📝 Cloud OpenClaw platform for deploying AI employees and personal assistants with inbox, browser, CRM, calendar, and integration workflows.
 - 🆓 Free plan with 300 credits per month, one AI employee, and no credit card required.
+
+**[MoClaw](https://moclaw.ai/)** :us:
+- 📝 AI personal assistant platform offering browser automation, integrations, and continuous task execution.
+- 🆓 Free plan with limited usage.
+
+**[Jarvie](https://heyjarvie.com/)** :us:
+- 📝 AI assistant for productivity, writing, and task automation with a focus on personal workflows.
+- 🆓 Free plan with limited usage.
+
+**[Kollab](https://kollab.im/pricing)** :globe_with_meridians:
+- 📝 AI personal assistant and collaboration platform with shared workspace and pricing overview for team usage.
+- 🆓 Free tier available with 2000 credits/month .
 
 
 ## ✅ Task Agents
