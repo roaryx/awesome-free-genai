@@ -1,7 +1,7 @@
 # Awesome Free GenAI
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Tools](https://img.shields.io/badge/Tools-123-blueviolet)
+![Tools](https://img.shields.io/badge/Tools-124-blueviolet)
 [![Build & Deploy](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/roaryx/awesome-free-genai/actions/workflows/build-and-deploy.yml)
 
 > A curated list of generative AI agents, applications, and infrastructure with free tiers.
@@ -83,6 +83,10 @@
 **[Agnes](https://app.agnes-ai.com/)** :singapore:
 - 📝 A versatile AI tool that automates research, generates reports, creates presentations
 - 🆓 Free plan with limited usage.
+
+**[Origami](https://origami.chat/)** :us:
+- 📝 AI marketing agent that helps lead generation.
+- 🆓 Free plan with one-time 1,000 credits.
 
 **[Parallel](https://platform.parallel.ai/)** :us:
 - 📝 AI web research platform for deep research, web search, extraction, monitoring, and dataset creation with cited, structured outputs.
