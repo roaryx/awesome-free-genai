@@ -101,3 +101,9 @@ agents:
     description: AI assistant for productivity, writing, and task automation with a focus on personal workflows.
     location: USA
     free_tier: Free plan with limited usage.
+
+  - name: Kollab
+    url: https://kollab.im/pricing
+    description: AI personal assistant and collaboration platform with shared workspace and pricing overview for team usage.
+    location: Hong Kong
+    free_tier: Free tier available with 2000 credits/month .
