@@ -21,6 +21,24 @@ agents:
     location: USA
     free_tier: Free plan with 10 daily credits and 100 monthly credits.
 
+  - name: Treblo
+    url: https://treblo.com/
+    description: AI music generation platform for creating songs from prompts with unlimited free generation on the latest model.
+    location: USA
+    free_tier: Free plan with unlimited songs and no usage restrictions on generated music.
+
+  - name: Mureka
+    url: https://mureka.ai/
+    description: AI music generator for creating original songs, beats, and soundtracks from prompts and reference audio.
+    location: USA
+    free_tier: Free trial with limited generation access for new users.
+
+  - name: FreeMusic.ai
+    url: https://www.freemusic.ai/
+    description: AI music generator for creating royalty-free songs, lyrics, vocals, and remixes from prompts.
+    location: USA
+    free_tier: Free plan with monthly creation credits and access to music, lyrics, vocals, remix, and stems tools.
+
   - name: Murf AI
     url: https://murf.ai
     description: AI voice generator for voiceovers, presentations, and videos with 200+ voices across 20+ languages.
