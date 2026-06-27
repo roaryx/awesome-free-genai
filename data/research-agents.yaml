@@ -42,6 +42,12 @@ agents:
     location: Singapore
     free_tier: Free plan with limited usage.
 
+  - name: Origami
+    url: https://origami.chat/
+    description: AI marketing agent that helps lead generation.
+    location: USA
+    free_tier: Free plan with one-time 1,000 credits.
+
   - name: Parallel
     url: https://platform.parallel.ai/
     description: AI web research platform for deep research, web search, extraction, monitoring, and dataset creation with cited, structured outputs.
