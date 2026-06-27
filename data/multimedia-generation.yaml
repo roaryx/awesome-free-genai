@@ -51,6 +51,12 @@ agents:
     location: USA
     free_tier: Free plan includes limited usage for exploration.
 
+  - name: Reve
+    url: https://www.reve.com/
+    description: AI image generation platform focused on controllable, high-resolution creative workflows with code-like editing.
+    location: USA
+    free_tier: Free accounts receive an introductory allocation of creative energy and a daily refresh thereafter.
+
   - name: Murf AI
     url: https://murf.ai
     description: AI voice generator for voiceovers, presentations, and videos with 200+ voices across 20+ languages.
