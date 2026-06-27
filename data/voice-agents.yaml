@@ -41,4 +41,9 @@ agents:
     description: Voice agentic platform with ultra-low latency TTS, STT, and speech-to-speech models for building production-grade voice agents at scale.
     location: USA
     free_tier: Free to sign up with playground access; API usage is pay-as-you-go with no minimum spend.
-    
+
+  - name: Realtime AI
+    url: https://realtime.ai/
+    description: Real-time voice AI platform for building conversational agents with low-latency speech and live interaction.
+    location: USA
+    free_tier: Free tier available with limited usage.
