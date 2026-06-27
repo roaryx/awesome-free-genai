@@ -39,6 +39,12 @@ agents:
     location: USA
     free_tier: Free plan with monthly creation credits and access to music, lyrics, vocals, remix, and stems tools.
 
+  - name: Flowmusic
+    url: https://www.flowmusic.app/
+    description: Generative AI music platform for creating, remixing, and sharing studio-quality songs with personalized sound.
+    location: USA
+    free_tier: Free plan with daily credits and access to core music creation and remix tools.
+
   - name: Murf AI
     url: https://murf.ai
     description: AI voice generator for voiceovers, presentations, and videos with 200+ voices across 20+ languages.
