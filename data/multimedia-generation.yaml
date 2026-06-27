@@ -45,6 +45,12 @@ agents:
     location: USA
     free_tier: Free plan with daily credits and access to core music creation and remix tools.
 
+  - name: Flora
+    url: https://flora.ai/
+    description: Creative AI platform for building visual and multimedia workflows with generative tools for design and content creation.
+    location: USA
+    free_tier: Free plan includes limited usage for exploration.
+
   - name: Murf AI
     url: https://murf.ai
     description: AI voice generator for voiceovers, presentations, and videos with 200+ voices across 20+ languages.
